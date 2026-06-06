@@ -1,4 +1,4 @@
-// State Arrays Management
+ State Arrays Management
 let developers = [];
 let currentFilterQuery = "";
 
