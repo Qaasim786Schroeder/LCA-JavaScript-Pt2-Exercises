@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
   setupEventListeners();
 });
 
-// JSON Loader Engine
+// JSON Loader Engine (FIXED PATH TO STEP OUT OF JS FOLDER)
 async function fetchDevelopers() {
   try {
-    const response = await fetch("developers.json");
+    const response = await fetch("../developers.json");
     if (!response.ok) throw new Error("Data retrieval pipeline error.");
     developers = await response.json();
   } catch (error) {
@@ -182,7 +182,7 @@ function setupEventListeners() {
       name: nameInput,
       role: roleInput,
       skills: skillsInput,
-      avatar: "https://placehold.co/100x100/7F7F7F/ffffff", // Cool gray block placeholder for additions
+      avatar: "https://placehold.co/100x100/7F7F7F/ffffff",
       availableForHire: availableInput,
       location: locationInput,
     };
